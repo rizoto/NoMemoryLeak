@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00518DE7D2532167357F7005 /* libPods-NoMemoryLeakTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E601E5BD6DB3FF591CB789B8 /* libPods-NoMemoryLeakTests.a */; };
+		00A46FCFD9FD9CC6FDBC040E /* libPods-NoMemoryLeak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD774C1BE6AF99BC672817B8 /* libPods-NoMemoryLeak.a */; };
 		707281B41B742E600024B04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 707281B31B742E600024B04A /* main.m */; };
 		707281B71B742E600024B04A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 707281B61B742E600024B04A /* AppDelegate.m */; };
 		707281BA1B742E600024B04A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707281B91B742E600024B04A /* ViewController.m */; };
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14CA4A1D033732BF6CC1FA4B /* Pods-NoMemoryLeak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMemoryLeak.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoMemoryLeak/Pods-NoMemoryLeak.release.xcconfig"; sourceTree = "<group>"; };
 		707281AE1B742E600024B04A /* NoMemoryLeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoMemoryLeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		707281B21B742E600024B04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		707281B31B742E600024B04A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +49,11 @@
 		707281D81B742FCC0024B04A /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		70CD95901B7AF42200377E07 /* ImagePickerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerPopoverController.h; sourceTree = "<group>"; };
 		70CD95911B7AF42200377E07 /* ImagePickerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerPopoverController.m; sourceTree = "<group>"; };
+		AAE9936F0C96D154A6F9DF72 /* Pods-NoMemoryLeakTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMemoryLeakTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoMemoryLeakTests/Pods-NoMemoryLeakTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD774C1BE6AF99BC672817B8 /* libPods-NoMemoryLeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoMemoryLeak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48C7637D9AD18D273EF6A1E /* Pods-NoMemoryLeakTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMemoryLeakTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoMemoryLeakTests/Pods-NoMemoryLeakTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1F6902F4DE78B8DBA2A9483 /* Pods-NoMemoryLeak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMemoryLeak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoMemoryLeak/Pods-NoMemoryLeak.debug.xcconfig"; sourceTree = "<group>"; };
+		E601E5BD6DB3FF591CB789B8 /* libPods-NoMemoryLeakTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoMemoryLeakTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A46FCFD9FD9CC6FDBC040E /* libPods-NoMemoryLeak.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,18 +69,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00518DE7D2532167357F7005 /* libPods-NoMemoryLeakTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039B9DAACB4327DC4DCC4771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C48C7637D9AD18D273EF6A1E /* Pods-NoMemoryLeakTests.debug.xcconfig */,
+				AAE9936F0C96D154A6F9DF72 /* Pods-NoMemoryLeakTests.release.xcconfig */,
+				D1F6902F4DE78B8DBA2A9483 /* Pods-NoMemoryLeak.debug.xcconfig */,
+				14CA4A1D033732BF6CC1FA4B /* Pods-NoMemoryLeak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		707281A51B742E600024B04A = {
 			isa = PBXGroup;
 			children = (
 				707281B01B742E600024B04A /* NoMemoryLeak */,
 				707281CA1B742E600024B04A /* NoMemoryLeakTests */,
 				707281AF1B742E600024B04A /* Products */,
+				039B9DAACB4327DC4DCC4771 /* Pods */,
+				906875BA2BA5AD5F01EE4FDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +152,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		906875BA2BA5AD5F01EE4FDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E601E5BD6DB3FF591CB789B8 /* libPods-NoMemoryLeakTests.a */,
+				BD774C1BE6AF99BC672817B8 /* libPods-NoMemoryLeak.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 707281D11B742E600024B04A /* Build configuration list for PBXNativeTarget "NoMemoryLeak" */;
 			buildPhases = (
+				F50EBCB1D568CD6277AF4262 /* Check Pods Manifest.lock */,
 				707281AA1B742E600024B04A /* Sources */,
 				707281AB1B742E600024B04A /* Frameworks */,
 				707281AC1B742E600024B04A /* Resources */,
+				D7B529F7E3263A05EE3348F7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 707281D41B742E600024B04A /* Build configuration list for PBXNativeTarget "NoMemoryLeakTests" */;
 			buildPhases = (
+				F1DA4D95AA983D35D46B5D80 /* Check Pods Manifest.lock */,
 				707281C31B742E600024B04A /* Sources */,
 				707281C41B742E600024B04A /* Frameworks */,
 				707281C51B742E600024B04A /* Resources */,
+				97794D0C309CD1382D0FFC85 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +259,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97794D0C309CD1382D0FFC85 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoMemoryLeakTests/Pods-NoMemoryLeakTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B529F7E3263A05EE3348F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoMemoryLeak/Pods-NoMemoryLeak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DA4D95AA983D35D46B5D80 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F50EBCB1D568CD6277AF4262 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		707281AA1B742E600024B04A /* Sources */ = {
@@ -311,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -349,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -359,26 +458,31 @@
 		};
 		707281D21B742E600024B04A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F6902F4DE78B8DBA2A9483 /* Pods-NoMemoryLeak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NoMemoryLeak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		707281D31B742E600024B04A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CA4A1D033732BF6CC1FA4B /* Pods-NoMemoryLeak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NoMemoryLeak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		707281D51B742E600024B04A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C48C7637D9AD18D273EF6A1E /* Pods-NoMemoryLeakTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -398,6 +502,7 @@
 		};
 		707281D61B742E600024B04A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE9936F0C96D154A6F9DF72 /* Pods-NoMemoryLeakTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
