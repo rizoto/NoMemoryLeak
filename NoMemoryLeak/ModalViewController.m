@@ -7,12 +7,14 @@
 //
 
 #import "ModalViewController.h"
+#import "RSEnvironment.h"
 
 @interface ModalViewController () <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPopoverControllerDelegate>
 {
     UIAlertController *alert;
     UIPopoverController *popOver;
     UIImagePickerController *_picker;
+    __weak IBOutlet UIButton *pickerButton;
     __weak IBOutlet UINavigationItem *bar;
 }
 
@@ -23,6 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (RSEnvironment.system.version.major >= 8) {
+        [bar.leftBarButtonItem setEnabled:YES];
+    }
+    if (RSEnvironment.UI.isIdiomIPad) {
+        [pickerButton setEnabled:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

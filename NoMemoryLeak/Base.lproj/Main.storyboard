@@ -93,6 +93,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bar" destination="W1g-lv-2uE" id="Icj-JQ-MbV"/>
+                        <outlet property="pickerButton" destination="5fm-MI-19U" id="cTK-3P-h0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXN-Pw-Z3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
