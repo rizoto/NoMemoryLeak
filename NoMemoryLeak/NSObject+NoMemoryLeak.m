@@ -64,7 +64,7 @@
 }
 
 + (void)printWithClasses:(NSArray*)classes {
-    [NSObject print:nil min:2 classes:classes];
+    [NSObject print:nil min:1 classes:classes];
 }
 
 + (void)print:(NSMutableDictionary *)_md min:(NSInteger)min classes:(NSArray*)classes {
@@ -82,7 +82,7 @@
 
 + (id)setCounter:(NSInteger)_num :(NSString *)_class :(NSInteger)_op :(NSMutableDictionary *)_md {
     NSNumber *number = [_md objectForKey:_class];
-    [_md setObject:@(number.integerValue + _num > 0 ?:0) forKey:_class];
+    [_md setObject:@((number.integerValue + _num) < 0 ? 0 : (number.integerValue + _num)) forKey:_class];
     switch (_op) {
         case 0:
             return _md;
