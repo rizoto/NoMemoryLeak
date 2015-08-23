@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+NoMemoryLeak.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+        NSLog(@"NSObject counter: %ld", (long)[NSObject getCounter]);
+        [NSObject printWithClasses:@[@"TestClass" ,@"NSObject" ,@"ModalViewController" ,@"ImagePickerPopoverController" ,@"UIActionSheet", @"UIAlertController"]];
 }
 
 @end

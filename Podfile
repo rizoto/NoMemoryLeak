@@ -3,6 +3,7 @@ platform :ios, '7.0'
 
 target 'NoMemoryLeak' do
 
+pod 'RSSwizzle'
 pod 'RSEnvironment'
 
 end

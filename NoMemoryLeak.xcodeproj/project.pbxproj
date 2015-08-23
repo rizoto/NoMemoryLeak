@@ -18,6 +18,7 @@
 		707281CE1B742E600024B04A /* NoMemoryLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 707281CD1B742E600024B04A /* NoMemoryLeakTests.m */; };
 		707281D91B742FCC0024B04A /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707281D81B742FCC0024B04A /* ModalViewController.m */; };
 		70CD95921B7AF42200377E07 /* ImagePickerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CD95911B7AF42200377E07 /* ImagePickerPopoverController.m */; };
+		70CFA1F81B895F95008751D0 /* NSObject+NoMemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CFA1F71B895F95008751D0 /* NSObject+NoMemoryLeak.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		707281D81B742FCC0024B04A /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		70CD95901B7AF42200377E07 /* ImagePickerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerPopoverController.h; sourceTree = "<group>"; };
 		70CD95911B7AF42200377E07 /* ImagePickerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerPopoverController.m; sourceTree = "<group>"; };
+		70CFA1F61B895F95008751D0 /* NSObject+NoMemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NoMemoryLeak.h"; sourceTree = "<group>"; };
+		70CFA1F71B895F95008751D0 /* NSObject+NoMemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NoMemoryLeak.m"; sourceTree = "<group>"; };
 		AAE9936F0C96D154A6F9DF72 /* Pods-NoMemoryLeakTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMemoryLeakTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoMemoryLeakTests/Pods-NoMemoryLeakTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD774C1BE6AF99BC672817B8 /* libPods-NoMemoryLeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoMemoryLeak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48C7637D9AD18D273EF6A1E /* Pods-NoMemoryLeakTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoMemoryLeakTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoMemoryLeakTests/Pods-NoMemoryLeakTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				707281D81B742FCC0024B04A /* ModalViewController.m */,
 				70CD95901B7AF42200377E07 /* ImagePickerPopoverController.h */,
 				70CD95911B7AF42200377E07 /* ImagePickerPopoverController.m */,
+				70CFA1F61B895F95008751D0 /* NSObject+NoMemoryLeak.h */,
+				70CFA1F71B895F95008751D0 /* NSObject+NoMemoryLeak.m */,
 			);
 			path = NoMemoryLeak;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CFA1F81B895F95008751D0 /* NSObject+NoMemoryLeak.m in Sources */,
 				707281D91B742FCC0024B04A /* ModalViewController.m in Sources */,
 				707281BA1B742E600024B04A /* ViewController.m in Sources */,
 				707281B71B742E600024B04A /* AppDelegate.m in Sources */,
